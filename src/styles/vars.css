@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+
+    /* Font */
+    --main-font: "Rajdhani", sans-serif;
+
+    /* Colors */
+
+    --color-one: #ffb800;
+    --color-two: #330099;
+    --color-three: #fd2282;
+    --color-four: #DED8FF;
+    --color-five: #040348;
+    --color-six: #F8F0FB;
+}
+
+body.dark-mode {
+    --primary-color: #0A3871;
+    --secondary-color: #f2f2f2;
+    --tertiary-color: #b892ff;
+}
+
+*,
+*::before,
+*::after {
+    transition: background-color 0.5s ease;
+}
+
+/* Certifique-se de que a transição também aplique a outros elementos que você deseja animar */
+body {
+    transition: color 0.5s ease;
+}

@@ -1,0 +1,389 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vh;
+    max-height: 100vh;
+    z-index: -1;
+}
+
+.background__container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 0;
+}
+
+.container__65 {
+    width: 65%;
+    height: 100%;
+    background-color: var(--color-two);
+    z-index: -1000;
+}
+
+.container__35 {
+    width: 35%;
+    height: 100%;
+    background-color: var(--color-three);
+    z-index: -1000;
+}
+
+.container__middle {
+    width: 225px;
+    height: 225px;
+    position: relative;
+    border-radius: 125px;
+    left: -115px;
+    top: 500px;
+    background-color: var(--color-five);
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container__middle li {
+    font-size: 28px;
+    width: 200px;
+    color: var(--color-one);
+    font-family: var(--main-font);
+    position: absolute;
+    list-style: none;
+    bottom: 75px;
+    left: 15px;
+    transform-origin: 270px;
+    transition: ease 1s;
+    z-index: -1;
+}
+
+.container__middle li div {
+    transform: rotate(calc(300deg / -10 * var(--i)));
+    background-color: var(--color-five);
+    width: 200px;
+    height: 75px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    ;
+}
+
+.container__middle li div:hover {
+    background-color: var(--color-one);
+    color: var(--color-five);
+    transition: 0.5s;
+}
+
+.container__middle.active li {
+    transform: rotate(calc(300deg / 10 * var(--i)));
+}
+
+.container__middle button {
+    width: 100%;
+    height: 100%;
+    padding: 36px;
+    text-decoration: none;
+    background-color: transparent;
+    border: none;
+}
+
+.fa-plus {
+    font-size: 5rem;
+    color: var(--color-one);
+    position: absolute;
+    right: 75px;
+    bottom: 75px;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 1s;
+}
+
+.fa-plus:hover {
+    color: var(--color-four);
+    transition: 1s;
+}
+
+.container__middle.active .fa-plus {
+    transform: rotate(225deg);
+}
+
+
+
+
+
+.header__container {
+    width: auto;
+    height: 10%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 2.5%;
+    gap: 12px;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    background: var(--color-five);
+    z-index: 1;
+    position: fixed;
+    color: var(--color-one);
+}
+
+header h1 {
+    font-family: var(--main-font);
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+header h1:hover {
+    color: var(--color-four);
+    transition: 0.5s;
+}
+
+
+
+
+
+.main__container {
+    width: 55%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    top: 10%;
+    position: fixed;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.main__container__text {
+    font-family: var(--main-font);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--color-one);
+    transition: 0.75s ease-in-out;
+}
+
+.user {
+    left: 0;
+}
+
+.sobre-active {
+    .user {
+        left: 0;
+        transition-delay: 0.75s;
+    }
+    .techstack {
+        left: 100%;
+    
+    }
+    .curriculum {
+        left: 100%;
+    
+
+    }
+    .projects {
+        left: 100%;
+    
+
+    }
+    .contact {
+        left: 100%;
+    
+
+    }
+}
+
+.techstack {
+    left: 100%;
+}
+
+.stack-active {
+    
+    .techstack {
+        left: 0;
+        transition-delay: 0.75s;
+    }
+    .user {
+        left: 100%;
+    
+
+    }
+    .curriculum {
+        left: 100%;
+    
+
+    }
+    .projects {
+        left: 100%;
+    
+
+    }
+    .contact {
+        left: 100%;
+    
+
+    }
+}
+
+.curriculum {
+    left: 100%;
+
+}
+.curriculo-active {
+
+    .curriculum {
+        left: 0;
+        transition-delay: 0.75s;
+
+    }
+    .user {
+        left: 100%;
+    
+
+    }
+    .techstack {
+        left: 100%;
+    
+
+    }
+    .projects {
+        left: 100%;
+    
+
+    }
+    .contact {
+        left: 100%;
+    
+
+    }
+}
+
+.projects {
+    left: 100%;
+
+}
+
+.projetos-active {
+    .projects {
+        left: 0;
+        transition-delay: 0.75s;
+
+    }
+    .techstack {
+        left: 100%;
+    
+
+    }
+    .curriculum {
+        left: 100%;
+    
+
+    }
+    .user {
+        left: 100%;
+    
+
+    }
+    .contact {
+        left: 100%;
+    
+
+    }
+}
+
+.contact {
+    left: 100%;
+
+}
+
+.contato-active {
+    .contact {
+        left: 0;
+        transition-delay: 0.75s;
+
+    }
+    .techstack {
+        left: 100%;
+    
+
+    }
+    .curriculum {
+        left: 100%;
+    
+
+    }
+    .projects {
+        left: 100%;
+    
+
+    }
+    .user {
+        left: 100%;
+    }
+}
+
+.main__container__text h1 {
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.main__container__text h1:hover {
+    color: var(--color-four);
+    transition: 0.5s;
+}
+
+.main__container__text p {
+    font-size: 24px;
+    color: var(--color-six);
+    text-align: justify;
+    line-height: 150%;
+}
+
+.main__container__text .contact {
+    font-size: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.main__container__text .contact a {
+    display: flex;
+    gap: 1rem;
+    width:0;
+    color: var(--color-one);
+    text-decoration: none;
+}
+
+.main__container__text .contact a:hover {
+    color: var(--color-four);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+
+
+.footer {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--main-font);
+    font-size: 1.25rem;
+    color: var(--color-one);
+    background: transparent;
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+}
