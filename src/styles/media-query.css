@@ -1,11 +1,243 @@
+@media screen and (max-device-width: 1024px) {
+
+    .container__middle li {
+        transform-origin: 225px;
+        font-size: 1.35rem;
+    }
+
+    .container__middle li div {
+        width: 150px;
+        height: 60px;
+    }
+
+    .curriculum__slider__text h1 {
+        font-size: 2.5rem;
+    }
+
+    .user span {
+        font-size: 1.25rem;
+    }
+
+    .user strong {
+        font-size: 1.55rem;
+    }
+
+    .footer {
+        font-size: 1rem;
+    }
+
+
+}
+
 @media screen and (max-device-width: 768px) {
+
+    .main__container__text h1 {
+        font-size: 2rem;
+    }
+
+    .curriculum__slider__text h1 {
+        font-size: 1.5rem;
+    }
+
+    .user span {
+        font-size: .75rem;
+    }
+
+    .user strong {
+        font-size: 1rem;
+    }
+
+    .user>span {
+        height: 1.35rem
+    }
+
+    .container__middle li {
+        transform-origin: 165px;
+        font-size: 1.15rem;
+        bottom: 50px;
+        left: 0;
+    }
+
+    .container__middle li div {
+        width: 125px;
+        height: 50px;
+    }
+
+    .container__middle {
+        width: 150px;
+        height: 150px;
+        left: -75px;
+    }
+
+    .fa-plus {
+        font-size: 5rem;
+        right: 40px;
+        bottom: 35px;
+    }
+
+    .main__container .techstack div {
+        font-size: 3.5rem;
+    }
+
+    .techstack__icons__container {
+        gap: 1.5rem;
+    }
+
+    .curriculum__flex button {
+        padding: .5rem;
+        font-size: .75rem;
+    }
+
+    .curriculum__slider__text li {
+        font-size: 1.25rem;
+    }
+
+    .curriculum__slider__text h2 {
+        font-size: 1rem;
+        color: var(--color-one);
+        display: inline-block
+    }
+
+    .curriculum__slider__text p {
+        font-size: 1rem;
+    }
+
+    .curriculum__slider__text a {
+        font-size: 1rem;
+    }
+
+    .curriculum__slider__text strong {
+        font-size: 1.25rem;
+    }
+
+    .projects__text a {
+        font-size: 1rem;
+    }
+
+    .projects__text a:hover {
+        transition: 0.5s;
+    }
+
+    .projects__text p {
+        font-size: 1rem;
+    }
+
+    .projects__text h2 {
+        font-size: 1rem;
+    }
+
+    .projects__text li {
+        font-size: 1.25rem;
+    }
+
+    .projects__text strong {
+        font-size: 1.25rem;
+    }
+
+    .footer {
+        font-size: .75rem;
+    }
+
+    .contact {
+        font-size: 1.75rem;
+    }
 
 }
 
 @media screen and (max-device-width: 430px) {
 
+    .background__container {
+        flex-direction: column;
+    }
+
+    .main__container {
+        width: 100%;
+        height: 50%;
+    }
+
+    .container__middle li {
+        transform-origin: 200px;
+        font-size: 1.15rem;
+        left: -125px;
+        transform: rotate(0deg) translateX(150px);
+    }
+
+    .container__middle li div {
+        width: 125px;
+        height: 2.5rem;
+        transform: rotate(calc(-360deg / -16 * var(--i)));
+    }
+
+    .container__middle.active li {
+        transform: rotate(calc(-360deg / 16 * var(--i)));
+    }
+
+    .container__middle {
+        width: 150px;
+        height: 150px;
+        left: 32%;
+        top: -20%;
+    }
+
+    .fa-plus {
+        font-size: 5rem;
+        right: 40px;
+        bottom: 35px;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    .theme__picker {
+        font-size: 1.25rem;
+    }
+
+    .container__65 {
+        width: 100%;
+        height: 65%;
+    }
+
+    .container__35 {
+        width: 100%;
+        height: 35%;
+    }
+
+    .footer {
+        color: var(--color-two);
+    }
+
 }
 
 @media screen and (max-device-width: 375px) {
+    .container__middle {
+        left: 30%;
+        width: 125px;
+        height: 125px;
+    }
 
+
+    @property --i {
+
+    }
+
+    .container__middle li {
+        transform-origin: 200px;
+        font-size: 1rem;
+        transform: rotate(0deg) translateX(125px) translateY(5px);
+    }
+
+    .container__middle li div {
+        width: 120px;
+    }
+
+    .fa-plus {
+        font-size: 5rem;
+        right: 27px;
+        bottom: 22px;
+    }    
+
+    .projects__text a {
+        font-size: .75rem;
+    }
 }

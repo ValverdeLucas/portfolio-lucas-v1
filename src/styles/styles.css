@@ -1,7 +1,7 @@
 body {
     width: 100vw;
     height: 100vh;
-    min-width: 100vh;
+    min-width: 100vw;
     max-height: 100vh;
     z-index: -1;
 }
@@ -154,10 +154,9 @@ header .nome:hover {
 
 .theme__picker {
     background-color: rgba(255, 255, 255, 100%);
-    width: 290px;
-    height: 70px;
+    padding: .75rem;
     border-radius: 50px;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 600;
     display: flex;
     align-items: center;
@@ -248,8 +247,9 @@ header .nome:hover {
     position: absolute;
     height: 100%;
     width: 100%;
-    padding: 32px;
+    padding: 1.5rem;
     display: flex;
+    gap: .75rem;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -269,7 +269,7 @@ header .nome:hover {
 }
 
 .main__container .techstack div {
-    font-size: 7rem;
+    font-size: 5rem;
 }
 
 .main__container .techstack span:hover {
@@ -426,7 +426,7 @@ header .nome:hover {
 
 .main__container__text h1 {
     width: fit-content;
-    font-size: 6rem;
+    font-size: 4rem;
     font-weight: 700;
     color: var(--color-one);
     transition: 0.5s;
@@ -439,10 +439,9 @@ header .nome:hover {
 }
 
 .user span {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     color: var(--color-six);
     height: 1.30em;
-    text-align: justify;
 }
 
 .user,
@@ -460,15 +459,15 @@ header .nome:hover {
     content: '';
     position: absolute;
     border-left: .15em solid var(--color-one);
-    height: 1.40em;
+    height: 1.35em;
     background: var(--color-two);
     right: 0;
     width: 105%;
-    animation-delay: 0.5s;
-    animation: blink-caret .75s step-end infinite, typing 1.5s steps(50, end) forwards;
+    animation: blink-caret .75s step-end infinite, typing 1s steps(40, end) forwards;
 }
 
 .user>span:nth-of-type(1)::before {
+    animation-delay: .5s;
     right: -5px;
 }
 
@@ -478,29 +477,35 @@ header .nome:hover {
 }
 
 .user>span:nth-of-type(3)::before {
-    animation-delay: 3s;
+    animation-delay: 2.5s;
     right: -5px;
 }
 
 .user>span:nth-of-type(4)::before {
-    animation-delay: 4.5s;
+    animation-delay: 3.5s;
     right: -5px;
 
 }
 
 .user>span:nth-of-type(5)::before {
-    animation-delay: 6s;
+    animation-delay: 4.5s;
     right: -5px;
 
 }
 
 .user>span:nth-of-type(6)::before {
-    animation-delay: 7.5s;
+    animation-delay: 5.5s;
     right: -5px;
 }
 
 .user>span:nth-of-type(7)::before {
-    animation-delay: 9s;
+    animation-delay: 6.5s;
+    right: -5px;
+}
+
+.user>span:nth-of-type(8)::before {
+    animation: blink-caret .75s step-end infinite, typing .5s steps(30, end) forwards;
+    animation-delay: 7.5s;
 }
 
 .user>span:last-of-type::before {
@@ -531,7 +536,7 @@ header .nome:hover {
 
 .main__container__text strong {
     color: var(--color-three);
-    font-size: 2.25rem;
+    font-size: 2rem;
     transition: 0.5s;
 }
 
@@ -540,8 +545,7 @@ header .nome:hover {
     background-color: var(--color-five);
     color: var(--color-one);
     font-size: 1.5rem;
-    width: 7rem;
-    height: 3.5rem;
+    padding: 1rem;
     border: 1px solid transparent;
     border-radius: 50px;
 }
@@ -589,7 +593,7 @@ header .nome:hover {
 }
 
 .curriculum__slider__text h1 {
-    font-size: 4rem;
+    font-size: 3rem;
 }
 
 .curriculum__slider__text p {
@@ -700,6 +704,7 @@ header .nome:hover {
     gap: 2rem;
     width: fit-content;
     color: var(--color-one);
+    padding: 0 2rem;
     font-weight: 500;
     text-decoration: none;
     transition: 0.5s;

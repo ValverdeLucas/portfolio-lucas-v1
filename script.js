@@ -170,4 +170,16 @@ tema4.onclick = function () {
     tema4.classList.add('active');
 }
 
+mobileMediaQuery = window.matchMedia("(max-device-width: 430px)");
+
+if (mobileMediaQuery.matches) {
+    botaoSobre.setAttribute("style", "--i:1");
+    botaoStack.setAttribute("style", "--i:2");
+    botaoContato.setAttribute("style", "--i:4");
+} else {
+    botaoSobre.setAttribute("style", "--i:3");
+    botaoStack.setAttribute("style", "--i:5");
+    botaoContato.setAttribute("style", "--i:9");
+}
+
 
